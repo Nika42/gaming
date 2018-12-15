@@ -1,0 +1,34 @@
+.section-1 {
+    margin-top: 60px;
+    .card-t1:nth-child(-n+5) {
+        margin-bottom: 16px;
+    }
+}
+
+
+.section-2 {
+    margin-top: 60px;
+    column.col-4 {
+        .post:not(:last-child){
+            margin-bottom: 30px;
+        }
+    }
+}
+
+
+.column-title {
+    margin-bottom: 0;
+    font-family: 'BPG Banner ExtraSquare Caps', sans-serif;
+}
+
+.column-meta {
+    color: #8e8e8e;
+    font-family: 'BPG Banner', sans-serif;
+}
+
+
+#column-2 {
+    .card {
+        margin-bottom: 30px;
+    }
+}

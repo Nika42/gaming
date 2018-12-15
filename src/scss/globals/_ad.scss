@@ -1,0 +1,32 @@
+.ad {
+    padding: 50px 30px;
+    color: #a7a7a7;
+    border-radius: 2px;
+    position: relative;
+    .ad-container {
+        position: relative;
+        z-index: 2;
+    }
+    p {
+        font-size: 13px;
+    }
+    a {
+        font-size: 14px;
+    }
+    &.assasins-creed {
+        background: url('../images/assasins-creed.jpg') left center/cover no-repeat;
+    }
+    &.god-of-war {
+        background: url('../images/god-of-war.jpg') center center/cover no-repeat;
+    }
+    &:before {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(26, 30, 39, 0.7);
+        position: absolute;
+        z-index: 1;
+        content: "";
+    }
+}

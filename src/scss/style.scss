@@ -1,0 +1,94 @@
+$grid-gutter-width: 16px !default;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1040px
+) !default;
+
+@import './globals/mixin';
+@import './globals/fonts';
+@import './globals/colors';
+
+@import "bootstrap";
+
+
+body {
+    font-family: 'Metropolis Regular', 'BPG Banner', sans-serif;
+    font-size: px2rem(14px);
+    background-color: $dark-2;
+    display: $grid-gutter-width;
+}
+
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Metropolis Bold', 'BPG Banner ExtraSquare Caps', sans-serif;
+    color: #dadada;
+}
+
+
+
+ul {
+    margin: 0;
+    padding: 0;
+    li {
+        list-style: none;
+        float: left;
+    }
+}
+
+a {
+    text-decoration: none;
+    transition: color 0.2s, background-color 0.2s;
+    &:hover {
+        color: $main-primary;
+        text-decoration: none;
+    }
+}
+
+
+
+button {
+    cursor: pointer;
+    &.primary {
+        border: 1px solid white;
+        outline: 0;
+        background-color: transparent;
+        color: white;
+        padding: 5px 30px;
+        border-radius: 100px;
+        font-size: px2rem(13px);
+        font-family: 'Metropolis Light', 'BPG Banner', sans-serif;
+        transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+        user-select: none;
+        display: flex;
+        &:hover {
+            background-color: $main-primary;
+            color: #333;
+            border-color: $main-primary;
+        }
+    }
+}
+
+.flex-20 {
+    flex: 0 0 25%;
+    max-width: 25%;
+    
+}
+
+main {
+    margin-bottom: 200px;
+}
+
+
+@import './globals/post/card';
+@import './globals/post/game';
+@import './globals/post/news';
+
+@import './globals/ad';
+
+@import './header/header';
+
+@import './main/main';

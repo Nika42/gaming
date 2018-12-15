@@ -1,0 +1,35 @@
+.news {
+    color: #8e8e8e;
+
+    .news-img {
+        flex: 2;
+        img {
+            width: 100%;
+            border-radius: 2px;
+        }
+    }
+
+    .news-body {
+        flex: 3;
+        padding: 0 8px;
+        .news-title {
+            
+            transition: color 0.2s;
+            font-size: 14px;
+            &:hover {
+                color: $main_primary;
+            }
+        }
+        .news-meta .meta {
+            font-size: 13px;
+            display: inline-block;
+            &:first-child {
+                margin-right: 5px;
+            }
+        }
+    }
+
+    &:not(:last-child){
+        margin-bottom: 16px;
+    }
+}
