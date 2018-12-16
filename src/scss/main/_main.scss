@@ -1,5 +1,14 @@
+main {
+    padding-top: 60px;
+    margin-bottom: 200px;
+    background-image: url('../images/bg-2.jpg');
+    background-position: top center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: $dark-2;
+}
+
 .section-1 {
-    margin-top: 60px;
     .card-t1:nth-child(-n+5) {
         margin-bottom: 16px;
     }

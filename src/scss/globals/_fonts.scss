@@ -39,24 +39,27 @@
          url('../fonts/bpg-banner-extrasquare-caps-webfont.svg#bpg_banner_extrasquare_capsregular') format('svg');
 }
 
-
-
 @font-face {
-    font-family: 'Metropolis Regular';
-    src: url('../fonts/Metropolis/Metropolis-Regular.otf') format("opentype");
+    font-family: 'Pangram Regular';
+    src: url('../fonts/Pangram/Pangram-Regular.otf') format("opentype");
 }
 
 @font-face {
-    font-family: 'Metropolis Light';
-    src: url('../fonts/Metropolis/Metropolis-Light.otf') format("opentype");
+    font-family: 'Pangram Light';
+    src: url('../fonts/Pangram/Pangram-Light.otf') format("opentype");
 }
 
 @font-face {
-    font-family: 'Metropolis Bold';
-    src: url('../fonts/Metropolis/Metropolis-Bold.otf') format("opentype");
+    font-family: 'Pangram Bold';
+    src: url('../fonts/Pangram/Pangram-Bold.otf') format("opentype");
 }
 
 @font-face {
-    font-family: 'Metropolis Black';
-    src: url('../fonts/Metropolis/Metropolis-Black.otf') format("opentype");
+    font-family: 'Pangram ExtraBold';
+    src: url('../fonts/Pangram/Pangram-ExtraBold.otf') format("opentype");
+}
+
+@font-face {
+    font-family: 'Pangram Black';
+    src: url('../fonts/Pangram/Pangram-Black.otf') format("opentype");
 }

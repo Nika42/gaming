@@ -496,11 +496,11 @@
             }), i.pristine = !1;
         });
     }
-    var q, P, R, L, M, I, S, H, W = "4.0.5";
-    function Y(e) {
+    var q, P, R, L, M, I, S, W, Y = "4.0.5";
+    function H(e) {
         var t;
-        if (void 0 === e && (e = {}), void 0 === this || Object.getPrototypeOf(this) !== Y.prototype) return new Y(e);
-        if (!Y.isSupported()) return h.call(this, "Instantiation failed.", "This browser is not supported."), 
+        if (void 0 === e && (e = {}), void 0 === this || Object.getPrototypeOf(this) !== H.prototype) return new H(e);
+        if (!H.isSupported()) return h.call(this, "Instantiation failed.", "This browser is not supported."), 
         a.failure();
         try {
             t = T({}, I || s, e);
@@ -562,31 +562,31 @@
             }
         }), Object.defineProperty(this, "version", {
             get: function() {
-                return W;
+                return Y;
             }
         }), Object.defineProperty(this, "noop", {
             get: function() {
                 return !1;
             }
-        }), H || (H = this));
+        }), W || (W = this));
     }
-    Y.isSupported = function() {
+    H.isSupported = function() {
         return ("transform" in (t = document.documentElement.style) || "WebkitTransform" in t) && ("transition" in (e = document.documentElement.style) || "WebkitTransition" in e);
         var e, t;
-    }, Object.defineProperty(Y, "debug", {
+    }, Object.defineProperty(H, "debug", {
         get: function() {
             return S || !1;
         },
         set: function(e) {
             return S = "boolean" == typeof e ? e : S;
         }
-    }), Y(), $(function() {
-        $("#slider").height(window.innerHeight);
-        var e = Y({
+    }), H(), $(function() {
+        var e = H({
             duration: 1e3
         });
         e.reveal("nav"), e.reveal(".slider-title"), e.reveal(".popular-games .switcher-container"), 
-        e.reveal(".card.card-t1"), e.reveal(".owl-carousel"), e.reveal(".post"), $(".card-t2 .card-title").each(function(e, t) {
+        e.reveal(".card"), e.reveal(".news"), e.reveal(".ad"), e.reveal(".owl-carousel"), 
+        e.reveal(".post"), $(".card-t2 .card-title").each(function(e, t) {
             var n;
             n = t, 38 < $(n).text().length && $(n).text($(n).text().slice(0, -Number($(n).text().length - 38)) + "...");
         });

@@ -15,10 +15,9 @@ $container-max-widths: (
 
 
 body {
-    font-family: 'Metropolis Regular', 'BPG Banner', sans-serif;
+    font-family: 'Pangram Regular', 'BPG Banner', sans-serif;
     font-size: px2rem(14px);
     background-color: $dark-2;
-    display: $grid-gutter-width;
 }
 
 
@@ -78,9 +77,6 @@ button {
     
 }
 
-main {
-    margin-bottom: 200px;
-}
 
 
 @import './globals/post/card';

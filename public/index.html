@@ -10,46 +10,101 @@
 </head>
 <body>
     <header>
-        <div id="slider">
+        <div id="navbar">
             <div class="container">
-                <nav>
-                    <div class="navbar-left float-left">
-                        <ul>
-                            <li class="bar-icon">
-                                <i class="fal fa-bars"></i>
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">მთავარი <span class="sr-only">(current)</span></a>
                             </li>
-                        </ul>
-                    </div>
-                    <div class="navbar-right float-right">
-                        <ul>
-                            <li>
-                                <a href="#">მთავარი</a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">სტატიები</a>
                             </li>
-                            <li>
-                                <a href="#">თამაშები</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    თამაშები
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
                             </li>
-                            <li>
-                                <a href="#">სტატიები</a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">ჩვენს შესახებ</a>
                             </li>
-                            <li>
-                                <a href="#">ჩვენს შესახებ</a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">კონტაქტი</a>
                             </li>
-                            <li>
-                                <a href="#">კონტაქტი</a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fal fa-search"></i></a>
                             </li>
-                            <li>
-                                <i class="fal fa-search"></i>
-                            </li>
-                            <li class="user-icon">
-                                <i class="fal fa-user"></i>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fal fa-user"></i></a>
                             </li>
                         </ul>
                     </div>
                 </nav>
-                <!-- <div class="slider-title">
-                    <h1>Inside scoop on <br> Assasins's Creed Origins</h1>
-                    <button class="primary">იხილეთ მეტი...</button>
-                </div> -->
+            </div>
+        </div>
+        <div id="slider" class="">
+            <div class="container d-flex align-items-center" style="height: 100%">
+                <div class="slider-title">
+                    <h1>METRO EXODUS-ის გამოსვლის თარიღი შეიცვალა</h1>
+                    <p>ზოგადად შევეჩვიეთ, რომ AAA თამაშები თითქმის არასდროს არ გამოდის იმ თარიღში, რომელსაც ამბობენ კომპანიები თავდაპირველად. ხანდახან გამოსვლის თარიღი რამდენიმე თვით და წლითაც კი იდება ხოლმე. ამ შემთხვევაში კი, მადლობა უნდა ვთქვათ, რომ A4 Games-მაც გადაწყვიტა</p>
+                    <button class="primary">იხილეთ მეტი</button>
+                </div>
+            </div>
+        </div>
+        <div class="row m-0">
+            <div class="col-4 p-0">
+                <a href="#" class="card card-t4">
+                    <img class="card-img-top" src="../images/posts/post-1.jpg" alt="image">
+                    <div class="card-body">
+                        <h1 class="card-title mb-0">უბისოფტმა დააანონსა პოსტ-აპოკალიპტური FAR CRY</h1>
+                        <p class="card-text">story trailer</p>
+                    </div>
+                </a>
+                <a href="#" class="card card-t4">
+                    <img class="card-img-top" src="../images/posts/post-2.jpg" alt="image">
+                    <div class="card-body">
+                        <h1 class="card-title mb-0">METRO-ს შესახებ ფილმის გადაღება შეწყდა</h1>
+                        <p class="card-text">remaster trailer</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-4 p-0">
+                <a href="#" class="card card-t4">
+                    <div class="card-img" style="background-image: url('../images/posts/post-3.jpg')"></div>
+                    <div class="card-body">
+                        <h1 class="card-title mb-0">რას უნდა ველოდოთ GAME AWARDS-გან</h1>
+                        <p class="card-text">official trailer</p>
+                    </div>
+                    <div class="overlay"></div>
+                </a>
+            </div>
+            <div class="col-4 p-0">
+                <a href="#" class="card card-t4">
+                    <img class="card-img-top" src="../images/posts/post-4.jpg" alt="image">
+                    <div class="card-body">
+                        <h1 class="card-title mb-0">ცნობილია RED DEAD ONLINE-ს გამოსვლის თარიღები</h1>
+                        <p class="card-text">blizzard mountain DLC</p>
+                    </div>
+                </a>
+                <a href="#" class="card card-t4">
+                    <img class="card-img-top" src="../images/posts/post-5.jpg" alt="image">
+                    <div class="card-body">
+                        <h1 class="card-title mb-0">უბისოფტმა დააანონსა პოსტ-აპოკალიპტური FAR CRY</h1>
+                        <p class="card-text">extended cinematic trailer</p>
+                    </div>
+                </a>
             </div>
         </div>
         <!-- <div class="popular-games mt-5">

@@ -23,23 +23,28 @@
 }
 
 @font-face {
-  font-family: 'Metropolis Regular';
-  src: url("../fonts/Metropolis/Metropolis-Regular.otf") format("opentype");
+  font-family: 'Pangram Regular';
+  src: url("../fonts/Pangram/Pangram-Regular.otf") format("opentype");
 }
 
 @font-face {
-  font-family: 'Metropolis Light';
-  src: url("../fonts/Metropolis/Metropolis-Light.otf") format("opentype");
+  font-family: 'Pangram Light';
+  src: url("../fonts/Pangram/Pangram-Light.otf") format("opentype");
 }
 
 @font-face {
-  font-family: 'Metropolis Bold';
-  src: url("../fonts/Metropolis/Metropolis-Bold.otf") format("opentype");
+  font-family: 'Pangram Bold';
+  src: url("../fonts/Pangram/Pangram-Bold.otf") format("opentype");
 }
 
 @font-face {
-  font-family: 'Metropolis Black';
-  src: url("../fonts/Metropolis/Metropolis-Black.otf") format("opentype");
+  font-family: 'Pangram ExtraBold';
+  src: url("../fonts/Pangram/Pangram-ExtraBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Pangram Black';
+  src: url("../fonts/Pangram/Pangram-Black.otf") format("opentype");
 }
 
 /*!
@@ -9019,10 +9024,9 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 body {
-  font-family: 'Metropolis Regular', 'BPG Banner', sans-serif;
+  font-family: 'Pangram Regular', 'BPG Banner', sans-serif;
   font-size: 0.875rem;
   background-color: #1a1e27;
-  display: 16px;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -9085,10 +9089,6 @@ button.primary:hover {
   -webkit-box-flex: 0;
           flex: 0 0 25%;
   max-width: 25%;
-}
-
-main {
-  margin-bottom: 200px;
 }
 
 .card {
@@ -9250,6 +9250,69 @@ main {
 
 .card.card-t3 .card-meta .meta:first-child {
   margin-right: 5px;
+}
+
+.card.card-t4 {
+  width: 100%;
+  border-radius: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  overflow: hidden;
+  color: white;
+}
+
+.card.card-t4:hover .card-img-top, .card.card-t4:hover .card-img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.card.card-t4 .card-img {
+  height: 500px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card.card-t4 .card-img-top {
+  border-radius: 0;
+  height: 250px;
+}
+
+.card.card-t4 .card-img, .card.card-t4 .card-img-top {
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.card.card-t4 .card-body {
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+}
+
+.card.card-t4 .card-title {
+  color: white;
+  font-size: 14px;
+}
+
+.card.card-t4 .card-text {
+  color: #b9b9b9;
+  text-transform: capitalize;
+  font-family: 'BPG Banner ExtraSquare Caps', sans-serif;
+}
+
+.card.card-t4:before {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(26, 30, 39, 0.4);
+  content: "";
+  z-index: 1;
 }
 
 game {
@@ -9454,69 +9517,119 @@ game img {
 
 #slider {
   width: 100%;
+  height: 657px;
   background-image: url("../images/slider-1.jpg");
   background-position: center;
   background-size: cover;
+  position: relative;
 }
 
-#slider nav {
+#slider .slider-title {
+  width: 60%;
+  position: relative;
+  z-index: 2;
   color: white;
 }
 
-#slider nav::after {
-  display: block;
-  clear: both;
+#slider .slider-title h1 {
+  color: white;
+  font-family: 'Pangram ExtraBold', 'BPG Banner ExtraSquare Caps', sans-serif;
+}
+
+#slider .slider-title p {
+  width: 75%;
+  font-size: 13px;
+  color: #ababab;
+  font-family: 'Pangram Regular', 'BPG Arial', sans-serif;
+}
+
+#slider .slider-title button {
+  padding: 7px 20px;
+  border-radius: 0;
+  border: none;
+  margin-top: 30px;
+  background: -webkit-linear-gradient(bottom left, #ed1b24 0%, #ee390e 100%);
+  background: linear-gradient(to top right, #ed1b24 0%, #ee390e 100%);
+  font-family: 'Pangram Regular', 'BPG Mrgvlovani Caps', sans-serif;
+}
+
+#slider .slider-title button:hover {
+  color: white;
+}
+
+#slider:before {
+  position: absolute;
   content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-linear-gradient(30deg, rgba(26, 30, 39, 0.9) 50%, rgba(26, 30, 39, 0.3) 100%);
+  background: linear-gradient(60deg, rgba(26, 30, 39, 0.9) 50%, rgba(26, 30, 39, 0.3) 100%);
+  z-index: 1;
 }
 
-#slider ul li {
-  padding: 25px 15px;
+#slider2 {
+  background-color: rgba(21, 23, 29, 0.6);
+}
+
+#navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.navbar {
+  color: white;
+  padding: 0;
+}
+
+.navbar .navbar-brand {
+  padding: 25px 0 0 0;
+}
+
+.navbar .nav-item {
+  padding: 25px 15px 0 15px;
   font-size: 0.9375rem;
-  font-family: 'Metropolis Light', 'BPG Banner ExtraSquare Caps', sans-serif;
+  font-family: 'Pangram Light', 'BPG Banner ExtraSquare Caps', sans-serif;
 }
 
-#slider ul li .fa-bars {
+.navbar .nav-item .fa-bars {
   font-size: 1.375rem;
 }
 
-#slider ul li.bar-icon {
+.navbar .nav-item.bar-icon {
   padding-left: 0;
 }
 
-#slider ul li.user-icon {
+.navbar .nav-item.user-icon {
   padding-right: 0;
 }
 
-#slider ul li .fal {
+.navbar .nav-item .fal {
   cursor: pointer;
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
   text-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
 }
 
-#slider ul li .fal:hover {
+.navbar .nav-item .fal:hover {
   color: #ffd800;
 }
 
-#slider ul li a {
+.navbar .nav-item > .nav-link {
   color: white;
   text-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
 }
 
-#slider .slider-title {
-  margin-top: 100px;
-  color: white;
+.navbar .nav-item > .nav-link:hover, .navbar .nav-item > .nav-link:focus {
+  color: #ffd800;
 }
 
-#slider .slider-title h1 {
-  color: white;
-  font-size: 3.125rem;
-}
-
-#slider .slider-title button {
-  margin-top: 30px;
-  text-transform: uppercase;
-  font-family: 'BPG Banner ExtraSquare Caps', sans-serif;
+.navbar .nav-item .dropdown-divider {
+  border-color: #d2d2d2;
 }
 
 .popular-games .switcher-container {
@@ -9574,8 +9687,14 @@ game img {
   margin-bottom: 0;
 }
 
-.section-1 {
-  margin-top: 60px;
+main {
+  padding-top: 60px;
+  margin-bottom: 200px;
+  background-image: url("../images/bg-2.jpg");
+  background-position: top center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: #1a1e27;
 }
 
 .section-1 .card-t1:nth-child(-n+5) {

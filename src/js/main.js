@@ -2,7 +2,7 @@ import ScrollReveal from 'scrollreveal';
 
 $(function () {
 
-    $('#slider').height(window.innerHeight);
+    // $('#slider').height(window.innerHeight);
 
     let sr = ScrollReveal({
         duration: 1000
@@ -10,7 +10,9 @@ $(function () {
     sr.reveal('nav')
     sr.reveal('.slider-title');
     sr.reveal('.popular-games .switcher-container');
-    sr.reveal('.card.card-t1');
+    sr.reveal('.card');
+    sr.reveal('.news');
+    sr.reveal('.ad');
     sr.reveal('.owl-carousel');
     sr.reveal('.post');
 
@@ -24,7 +26,6 @@ $(function () {
 
     $('.card-t2 .card-title').each(function(i, v){
         ellipsizeText(v);
-        
     });
 
     let owl = $(".owl-carousel").owlCarousel({
