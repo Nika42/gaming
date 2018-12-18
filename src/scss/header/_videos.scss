@@ -1,0 +1,45 @@
+.videos {
+    // margin-top: -120px;
+    .switcher-container {
+        @include clearfix;
+        margin-bottom: 30px;
+        vertical-align: middle;
+    }
+    
+    .switcher {
+        width: 75px;
+        height: 35px;
+        border: 1px solid white;
+        border-radius: 40px;
+        color: white;
+        font-size: px2rem(33px);
+        .fal {
+            margin-top: -1px;
+            cursor: pointer;
+            transition: color 0.2s;
+            &:hover {
+                color: $main_primary;
+            }
+        }
+        .fa-angle-left {
+            margin-left: 10px;
+        }
+        .fa-angle-right {
+            margin-right: 10px;
+        }
+    }
+    
+    .switcher-title {
+        color: white;
+        margin-left: 15px;
+        h6 {
+            color: white;
+            margin-bottom: 0;
+        }
+        p {
+            font-size: px2rem(12px);
+            color: #918792;
+            margin-bottom: 0;
+        }
+    }
+}

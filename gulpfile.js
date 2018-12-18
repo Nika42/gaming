@@ -64,10 +64,10 @@ gulp.task('scss', () => {
         .pipe(wait(200))
         .pipe(sourcemaps.init())
         .pipe(scss({
-            outputStyle: 'expanded', 
+            outputStyle: 'compressed', 
             includePaths: [ './public/components/bootstrap/scss' ] 
         }).on('error', scss.logError))
-        .pipe(postcss([ autoprefixer ]))
+        .pipe(postcss([autoprefixer({ cascade: false }) ]))
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('./public/css/'))
         .pipe(connect.reload());

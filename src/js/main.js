@@ -28,17 +28,45 @@ $(function () {
         ellipsizeText(v);
     });
 
-    let owl = $(".owl-carousel").owlCarousel({
-        items: 3,
-        loop: true,
-        margin: 16,
+    // let owl = $(".owl-carousel").owlCarousel({
+    //     items: 3,
+    //     loop: true,
+    //     margin: 16,
+    // });
+
+    // $('.switcher .fa-angle-left').click(function () {
+    //     owl.trigger('prev.owl.carousel', [600]);
+    // })
+    // $('.switcher .fa-angle-right').click(function () {
+    //     owl.trigger('next.owl.carousel', [600]);
+    // });
+
+
+    
+
+    var $owl = $('.owl-carousel');
+
+    $owl.owlCarousel({
+        items: 1,
+        loop: false,
+        margin: 0,
+        dots: true,
+        lazyLoad: true
     });
 
-    $('.switcher .fa-angle-left').click(function () {
-        owl.trigger('prev.owl.carousel', [600]);
-    })
-    $('.switcher .fa-angle-right').click(function () {
-        owl.trigger('next.owl.carousel', [600]);
-    })
-    
+});
+
+function makeViewable(){
+    $('.onLoading').remove();
+    $('html, body').css({
+        overflow: 'auto',
+        height: 'auto'
+    });
+};
+
+$(window).on("load", function () {
+    // setViewable();
+    setTimeout(function () {
+        makeViewable();
+    }, 0);
 });
