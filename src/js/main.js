@@ -14,7 +14,8 @@ $(function () {
     sr.reveal('.news');
     sr.reveal('.ad');
     sr.reveal('.owl-carousel');
-    sr.reveal('.post');
+    sr.reveal('.section-3 .col-3');
+    sr.reveal('.section-4 .container');
 
 
 
@@ -27,22 +28,6 @@ $(function () {
     $('.card-t2 .card-title').each(function(i, v){
         ellipsizeText(v);
     });
-
-    // let owl = $(".owl-carousel").owlCarousel({
-    //     items: 3,
-    //     loop: true,
-    //     margin: 16,
-    // });
-
-    // $('.switcher .fa-angle-left').click(function () {
-    //     owl.trigger('prev.owl.carousel', [600]);
-    // })
-    // $('.switcher .fa-angle-right').click(function () {
-    //     owl.trigger('next.owl.carousel', [600]);
-    // });
-
-
-    
 
     var $owl = $('.owl-carousel');
 
@@ -68,5 +53,5 @@ $(window).on("load", function () {
     // setViewable();
     setTimeout(function () {
         makeViewable();
-    }, 0);
+    }, 2500);
 });
